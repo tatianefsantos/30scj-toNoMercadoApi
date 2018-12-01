@@ -37,8 +37,8 @@ class ProdutoController {
         return service.buscarPorDepartamento(departamento)
     }
 
-    @GetMapping("/nome/{nome}")
-    fun buscarPorNome(@PathVariable(value = "nome") nome: String): Produto?{
+    @GetMapping("/nomeProduto/{nomeProduto}")
+    fun buscarPorNome(@PathVariable(value = "nomeProduto") nome: String): Produto?{
         return service.buscarPorNome(nome)
     }
 

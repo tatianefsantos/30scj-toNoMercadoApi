@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document
 
 @Document
 data class Produto(@Id var id: String?,
-                   var nome: String,
+                   var nomeProduto: String,
                    var marca: String?,
                    var quantidade: Int,
                    var departamento: String?,
